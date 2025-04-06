@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 14 - Responsive Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    header, footer {
+      background: rgb(85, 247, 134);
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    aside {
+      width: 20%;
+      padding: 10px;
+      min-height: 100px;
+    }
+
+    .aside1 {
+      background: rgb(255, 129, 240);
+    }
+
+    .aside2 {
+      background: rgb(127, 195, 210);
+    }
+
+    main {
+      width: 60%;
+      background: rgb(170, 208, 129);
+      padding: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+
+    footer {
+      background: lightgreen;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 20px;
+      }
+
+      aside, main {
+        width: 100%;
+      }
+    }
+    a{ 
+      background-color: aquamarine;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    a:hover{
+      background-color: rgb(250, 111, 120);
+    }
+  </style>
+</head>
+<body>
+    <a href="index.html">BAI11</a>
+    <a href="b12.html">BAI12</a>
+    <a href="Bai13.html">BAI13</a>
+    <a href="b14.html">BAI14</a>
+    
+  <header>Header</header>
+
+  <div class="container">
+    <aside class="aside1">Aside 1</aside>
+
+    <main>
+      <p>ảnh nì trông cute ghe hihi</p>
+      <img src="https://heucollege.edu.vn/upload/2025/02/avatar-hello-kitty-doi-1.webp" alt="ảnh mẫu">
+    </main>
+
+    <aside class="aside2">Aside 2</aside>
+  </div>
+
+  <footer>Footer</footer>
+</body>
+</html>
